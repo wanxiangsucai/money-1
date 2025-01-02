@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大写金额转换器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>大写金额转换器</h1>
+        
+        <div class="converter">
+            <div class="input-section">
+                <label for="amount">数字大写转换器</label>
+                <input type="text" id="amount" placeholder="请输入小写金额">
+                <button id="convert">计算</button>
+                <button id="reset">重置</button>
+            </div>
+            
+            <div class="result-section">
+                <label>金额大写形式:</label>
+                <div id="result" class="result-box"></div>
+            </div>
+        </div>
+        
+        <div class="currency-table">
+            <h2>五种货币对照表</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>货币</th>
+                        <th>简称</th>
+                        <th>货币符号</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>人民币</td>
+                        <td>RMB(CNY)</td>
+                        <td>￥</td>
+                    </tr>
+                    <tr>
+                        <td>美元</td>
+                        <td>USD</td>
+                        <td>$</td>
+                    </tr>
+                    <tr>
+                        <td>欧元</td>
+                        <td>EUR</td>
+                        <td>€</td>
+                    </tr>
+                    <tr>
+                        <td>英镑</td>
+                        <td>GBP</td>
+                        <td>£</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="examples">
+            <h2>五种数字大写形式</h2>
+            <ul>
+                <li>小写大写: 一二三四五六七八九十</li>
+                <li>123456789号</li>
+                <li>壹贰叁肆伍陆柒捌玖拾</li>
+                <li>壹仟贰佰叁拾肆亿伍仟陆佰柒拾捌万玖仟零壹拾</li>
+                <li>壹佰贰拾叁亿肆仟伍佰陆拾柒万捌仟玖佰零壹元整</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
